@@ -21,3 +21,28 @@ for (let i = 0; i < skills.length; i++){
     skill.innerText = skills[i];
     skillsList.appendChild(skill);
 }
+
+/* Lesson 4-3 */
+const messageForm = document.querySelector('[name = "leave_message"]');
+messageForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+    console.log(name, email, message);
+    const messageSection = document.getElementById('messages');
+    var messageList = messageSection.querySelector('ul');
+    var newMessage = document.createElement('li');
+    newMessage.innerHTML = `<a href = "mailto:${email}">${name}</a> <span>  wrote: ${message} </span>`;
+    let removeButton = document.createElement("button");
+    removeButton.innerHTML = "remove";
+    removeButton.type = "button";
+    removeButton.addEventListener("click", (e) => {
+        let entry = e.target.parentNode;
+        entry.remove();
+    });
+    newMessage.appendChild(removeButton);
+    messageList.appendChild(newMessage);
+    messageForm.reset();
+});
+
