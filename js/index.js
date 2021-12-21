@@ -1,10 +1,12 @@
 //Insert Copyright Text in Footer
-const today = new Date("November 2, 2021 12:30:00");
-const thisYear = today.getFullYear();
-const footer = document.querySelector('footer');
-let copyright = document.createElement('p');
-copyright.innerHTML = "Richard William Gabrielli " + thisYear;
-footer.appendChild(copyright);
+// const today = new Date("November 2, 2021 12:30:00");
+// const thisYear = today.getFullYear();
+// const footer = document.querySelector('footer');
+// const linkedIn = document.getElementById('linkedI');
+// const gitHub = document.getElementById('GitHub');
+// let copyright = document.createElement('p');
+// copyright.innerHTML = "Richard William Gabrielli " + thisYear;
+// footer.appendChild(copyright);
 
 //Create a List of Skills
 var skills = [
@@ -45,7 +47,9 @@ messageForm.addEventListener("submit", (event) => {
         entry.remove();
     });
     newMessage.appendChild(removeButton);
+
     messageList.appendChild(newMessage);
+    
     messageForm.reset();
 });
 

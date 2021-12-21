@@ -3,22 +3,24 @@ good blue: #0072e0
 grayish: #d5d5db */
 
 body {
-        /*background-image: linear-gradient(lightblue, white); */
-        background-color: #FDFFFF;
+        /* background-image: linear-gradient(rgb(9, 98, 128), white);  */
+        background-color: #FCFCFC;
         font-family: 'Roboto', sans-serif;
+        display: flex;
         flex-direction: column;
   }
-  h1{
-      font-weight: 650;
-  }
+  
   h2{
-      font-weight: lighter;
+      font-weight: bolder;
+  }
+  li{
+    list-style-type: none;
   }
 
   .tag {
     border-radius: 3px;
-    border: 2px solid black;
-    color: black;
+    border: 2px solid #4087DB;
+    color: #4087DB;
     display: inline-block;
     padding: 0.25rem 0.75rem;
     margin-bottom: 0.5rem;
@@ -29,7 +31,8 @@ body {
   }
 
   .experience_block {
-    background-color: #FDFFFF;
+    background-color: #dddcdc;
+    border-radius: 3px;
     display: flex;
     flex-direction: column;
     padding: 1rem;
@@ -40,12 +43,86 @@ body {
   }
 
   .connect_with_me{
-    border-radius: 3px;
-    border: 2px solid black;
-    color: black;
     display: inline-block;
-    padding: 0.25rem 0.75rem;
-    margin-bottom: 0.5rem; 
+    color: black;
+    padding: 0.1rem 0.1rem; 
+    margin-bottom: 0.1rem;
+    text-decoration: none;
+  }
+  
+  .connect_with_me:not(:last-child) {
+    margin-right: 0.1rem;
+  } 
+
+  /*lesson4-5*/
+  .header_section{
+    padding: 0.5rem;
+    margin: 100;
+    max-width: 1050px;
+    width: 100vw;
   }
 
+  .nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
   
+  .menu {
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+  }
+
+  .menu__item {
+    font-size: 100px;
+  }
+
+  .menu__item:not(:last-child) {
+    margin-right: 1rem;
+  }
+  
+  .link {
+    /* border-radius: 3px;
+    border: 2px solid black; */
+    color: black;
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .link:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  .button {
+    background-color: #4087DB;
+    border-radius: 3px;
+    color: white;
+    min-width: 100px;
+    padding: 0.5rem 1rem;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .field {
+    display: block;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .field_label,
+  .field_input{
+    display: block;
+  }
+
+.field_label {
+  color: black;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.field_input {
+  padding: 0.5rem 0.25rem;
+  width: 50%;
+}
