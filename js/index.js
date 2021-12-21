@@ -22,7 +22,7 @@ for (let i = 0; i < skills.length; i++){
     skillsList.appendChild(skill);
 }
 
-/* Lesson 4-3 */
+/* Lesson 4-3 */ //Updated work for my 4.3 branch in git
 const messageForm = document.querySelector('[name = "leave_message"]');
 messageForm.addEventListener("submit", (event) => {
     event.preventDefault();
