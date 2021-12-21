@@ -13,11 +13,14 @@ var skills = [
     "Python",
     "JavaScript",
     "HTML",
+    "Microsoft Access",
+    "Archive Space",
 ];
-var skillsSection = document.getElementById('skills');
+var skillsSection = document.getElementById('my_skills');
 var skillsList = skillsSection.querySelector('ul');
 for (let i = 0; i < skills.length; i++){
     const skill = document.createElement('li');
+    skill.className = 'tag';
     skill.innerText = skills[i];
     skillsList.appendChild(skill);
 }
@@ -46,3 +49,5 @@ messageForm.addEventListener("submit", (event) => {
     messageForm.reset();
 });
 
+/* Lesson-4-4 work */
+    //Look in index.css folder

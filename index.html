@@ -1,46 +1,72 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <title> Richard William Gabrielli: General Information </title>
+        <title> Richard William Gabrielli </title>
         <meta author = "Richard William Gabrielli" content="General Info">
         <meta name = "About me." content="Name, About, and Experience.">
+    
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto:wght@300&display=swap');
+            </style>
+        <link rel = "stylesheet", href = css/index.css>
+        
+       
+    
+    
     </head>
-
+    <h1>Richard William Gabrielli</h1>
     <body>
 
-    <section>
-    <h1>About</h1>
-        <p>
-            <ul>
-                <li>I am from Burlington North Carolina and study at UNC Chapel Hill.</li>
-                <li>In my free time I like to play tennis and swim.</li>
-                <li>I am currently training for a marathon in February of 2022.</li>
-                <li>I am currently reading "The Stand" by Stephen King.</li>
-            </ul>
+    <section id = "about_me">
+    <h2>About</h2>
+        <p id = "am_p">
+            Student of military history, international relations, and computer science.
+            Passionate about archival research and library science.
+            Inspired by creativity, driven to innovate.
         </p>
     </section>
 
-    <section> 
-    <h1>Experience</h1>
+    <section id = "my_experience"> 
+    <h2>Education & Experience</h2>
         <p>    
-            <ul>    
-                <li>I work at Wilson Special Collections Library at UNC.</li>
-                <li>I had an internship in Chapel Hill for the Institute for Defense and Business.</li>
+            <ul role = "list">    
+                <li class = "experience_block">
+                    <span><strong><a href = "https://catalog.unc.edu/undergraduate/programs-study/peace-war-defense-major-ba/" target="_blank">BA: Peace, War, & Defense (International Security and Intelligence)</a></strong> &mdash; UNC Chapel Hill</span>
+                    <span>(August 2018 - May 2022)</span>
+                </li>
+                <li class = "experience_block">
+                    <span><strong><a href = "https://catalog.unc.edu/undergraduate/programs-study/computer-science-major-ba/#text" target="_blank">BA: Computer Science</a></strong> &mdash; UNC Chapel Hill</span>
+                    <span>(August 2020 - July 2022)</span>
+                </li>
+                <li class = "experience_block">
+                    <span><strong>Student Research Assistant</strong> &mdash; Wilson Library Special Collections</span>
+                    <span>(September 2019 - Present)</span>
+                </li>
+                
+                <li class = "experience_block">
+                    <span><strong>Program Assistant: IB2 Log</strong> &mdash; Institute for Defense and Business</span>
+                    <span>(September 2020 - November 2020) (February 2021 - June 2021)</span>
+                </li>
             </ul>
         </p>
     </section>
 
-    <section id = "skills">
+    <section id = "my_skills">
         <h2>Skills</h2>
         <ul></ul>
     </section>
     
-    <section>
+    <section >
         <h1>Connect</h1>
         <p>       
-            </ul> 
-                <li>LinkedIn: William Gabrielli</li>   
-                <li>GitHub: <a href="url">https://github.com/richwillgabII</a></li>
+            <ul> 
+                <li class = "connect_with_me">
+                    <a href="https://www.linkedin.com/in/william-gabrielli-3488171ba?trk=people-guest_people_search-card" target="_blank">LinkedIn</a>
+                </li>   
+                
+                <li class = "connect_with_me">
+                    <a href="https://github.com/richwillgabII" target="_blank">GitHub</a>
+                </li>
                 
             </ul>
         </p>
@@ -50,21 +76,21 @@
         <h2>Leave a Message</h2>
         <form name = "leave_message">
             <br/>
-            <label>Name</label>
+            <label class = "leave_message">Name</label>
             <br/>
-                <input type = "text", name = "name", required = "true", id = "name">
+                <input type = "text", name = "name", required = "true", id = "name", class = "leave_message">
             
 
             <br/>
-            <label>Email</label>
+            <label class = "leave_message">Email</label>
             <br/>
-                <input type = "email", name = "email", required = "true", id="email">
+                <input type = "email", name = "email", required = "true", id="email", class = "leave_message">
             
 
             <br/>
-            <label>Message</label>
+            <label class = "leave_message">Message</label>
             <br/>
-                <textarea name = "message", required = "true", id="message"></textarea>
+                <textarea name = "message", required = "true", id="message", class = "leave_message"></textarea>
             
 
             <br/>
@@ -78,7 +104,7 @@
         <ul></ul>
     </section>
     
-    <footer></footer>
+    <footer id = "footer"></footer>
 
     <script src = "js/index.js"></script>
     </body>

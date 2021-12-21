@@ -1,0 +1,51 @@
+/* Colors that I might use later:
+good blue: #0072e0
+grayish: #d5d5db */
+
+body {
+        /*background-image: linear-gradient(lightblue, white); */
+        background-color: #FDFFFF;
+        font-family: 'Roboto', sans-serif;
+        flex-direction: column;
+  }
+  h1{
+      font-weight: 650;
+  }
+  h2{
+      font-weight: lighter;
+  }
+
+  .tag {
+    border-radius: 3px;
+    border: 2px solid black;
+    color: black;
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tag:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  .experience_block {
+    background-color: #FDFFFF;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .experience_block:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .connect_with_me{
+    border-radius: 3px;
+    border: 2px solid black;
+    color: black;
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 0.5rem; 
+  }
+
+  
