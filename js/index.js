@@ -53,5 +53,25 @@ messageForm.addEventListener("submit", (event) => {
     messageForm.reset();
 });
 
-/* Lesson-4-4 work */
+/* Lesson-4-4 and Lesson-4-5 work */
     //Look in index.css folder
+
+/* Lesson-6-1 work */
+
+//Fetch GitHub Repositories
+var githubRequest = new XMLHttpRequest();
+githubRequest.open("GET", "https://api.github.com/users/richwillgabII/repos");
+githubRequest.send();
+
+//Handle Response from Server
+githubRequest.addEventListener('load', function(){
+    var repositories = JSON.parse(githubRequest.responseText);
+    console.log(repositories);
+    var projectSection = document.getElementById('projects');
+    var projectList = projectSection.querySelector('ul');
+    for(let i = 0; i < repositories.length; i++){
+        let project = document.createElement('li');
+        project.innerText = repositories[i].name;
+        projectList.appendChild(project);
+    }
+});
