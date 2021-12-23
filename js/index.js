@@ -1,12 +1,10 @@
 //Insert Copyright Text in Footer
-// const today = new Date("November 2, 2021 12:30:00");
-// const thisYear = today.getFullYear();
-// const footer = document.querySelector('footer');
-// const linkedIn = document.getElementById('linkedI');
-// const gitHub = document.getElementById('GitHub');
-// let copyright = document.createElement('p');
-// copyright.innerHTML = "Richard William Gabrielli " + thisYear;
-// footer.appendChild(copyright);
+const today = new Date("November 2, 2021 12:30:00");
+const thisYear = today.getFullYear();
+const footer = document.querySelector('footer');
+let copyright = document.createElement('p');
+copyright.innerHTML = "Richard William Gabrielli " + thisYear + ":";
+footer.appendChild(copyright);
 
 //Create a List of Skills
 var skills = [
@@ -23,6 +21,17 @@ var skillsList = skillsSection.querySelector('ul');
 for (let i = 0; i < skills.length; i++){
     const skill = document.createElement('li');
     skill.className = 'tag';
+    if(skills[i] === "Java"){
+        skill.title = "Acquired during COMP 210 and 301.";
+    } else if(skills[i] === "C"){
+        skill.title = "Acquired during COMP 211."
+    } else if(skills[i] === "Python"){
+        skill.title = "Acquired in COMP 110."
+    }else if(skills[i] === "JavaScript" || skills[i] == "HTML"){
+        skill.title = "Acquired during Code The Dream: Intro to Programming."
+    } else{
+        skill.title = "Acquired during job as a Student Research Assistant."
+    }
     skill.innerText = skills[i];
     skillsList.appendChild(skill);
 }
@@ -65,7 +74,7 @@ messageForm.addEventListener("submit", (event) => {
 
 // //Handle Response from Server
 // githubRequest.addEventListener('load', function(){
-//     var repositories = JSON.parse(githubRequest.responseText);
+  //   var repositories = JSON.parse(githubRequest.responseText);
 //     console.log(repositories);
 //     var projectSection = document.getElementById('projects');
 //     var projectList = projectSection.querySelector('ul');
@@ -85,7 +94,10 @@ fetch('https://api.github.com/users/richwillgabII/repos')
         var projectList = projectSection.querySelector('ul');
         for(let i = 0; i < repositories.length; i++){
             let project = document.createElement('li');
-            project.innerText = repositories[i].name;
+            //project.innerText = repositories[i].name;
+            project.innerHTML = `<a href = "https://github.com/richwillgabII?tab=repositories", target="_blank">${repositories[i].name}</a>`;
             projectList.appendChild(project);
-    }
+        }
     });
+
+

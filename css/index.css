@@ -4,7 +4,7 @@ grayish: #d5d5db */
 
 body {
         /* background-image: linear-gradient(blue, yellow);  */
-        background-color: #FCFCFC;
+        background-color: #F6FAFF;
         /* background-color: #db4088; */
         font-family: 'Roboto', sans-serif;
         display: flex;
@@ -56,31 +56,18 @@ body {
   } 
 
   /*lesson4-5*/
-  .header_section{
-    padding: 0.5rem;
-    margin: 100;
-    max-width: 1050px;
-    width: 100vw;
+  .name{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    align-content: flex-end;
+    justify-content: center;
   }
 
   .nav {
-    align-items: center;
     display: flex;
-    justify-content: space-between;
-  }
-  
-  .menu {
-    display: flex;
-    flex-direction: wrap;
+    flex-direction: row;
     align-items: center;
-  }
-
-  .menu__item {
-    font-size: 100px;
-  }
-
-  .menu__item:not(:last-child) {
-    margin-right: 1rem;
+    justify-content: center;
   }
   
   .link {
@@ -126,4 +113,12 @@ body {
 .field_input {
   padding: 0.5rem 0.25rem;
   width: 50%;
+}
+
+.foot{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
 }
