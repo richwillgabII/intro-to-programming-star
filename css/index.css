@@ -1,11 +1,6 @@
-/* Colors that I might use later:
-good blue: #0072e0
-grayish: #d5d5db */
 
 body {
-        /* background-image: linear-gradient(blue, yellow);  */
         background-color: #F6FAFF;
-        /* background-color: #db4088; */
         font-family: 'Roboto', sans-serif;
         display: flex;
         flex-direction: column;
