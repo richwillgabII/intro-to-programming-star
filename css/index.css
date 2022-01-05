@@ -1,0 +1,119 @@
+
+body {
+        background-color: #F6FAFF;
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+  }
+  
+  h2{
+      font-weight: bolder;
+  }
+  li{
+    list-style-type: none;
+  }
+
+  .tag {
+    border-radius: 3px;
+    border: 2px solid #4087DB;
+    color: #4087DB;
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tag:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  .experience_block {
+    background-color: #dddcdc;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  
+  .experience_block:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .connect_with_me{
+    display: inline-block;
+    color: black;
+    padding: 0.1rem 0.1rem; 
+    margin-bottom: 0.1rem;
+    text-decoration: none;
+  }
+  
+  .connect_with_me:not(:last-child) {
+    margin-right: 0.1rem;
+  } 
+
+  /*lesson4-5*/
+  .name{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    align-content: flex-end;
+    justify-content: center;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .link {
+    /* border-radius: 3px;
+    border: 2px solid black; */
+    color: black;
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .link:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+
+  .button {
+    background-color: #4087DB;
+    border-radius: 3px;
+    color: white;
+    min-width: 100px;
+    padding: 0.5rem 1rem;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .field {
+    display: block;
+    margin-bottom: 1rem;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .field_label,
+  .field_input{
+    display: block;
+  }
+
+.field_label {
+  color: black;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.field_input {
+  padding: 0.5rem 0.25rem;
+  width: 50%;
+}
+
+.foot{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
